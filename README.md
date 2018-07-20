@@ -57,7 +57,7 @@ I recommend moving it to your ~/.ssh folder on linux, and running `chmod 700 you
 
 Once launched, back on the Homepage, you can now see your running instance on the Dashboard.
 
-![EC2 running](running-instance.png "Instance on Dashboard")
+![EC2 running](running-inst.png "Instance on Dashboard")
 
 On the dashboard, you want to determine the DNS/IP address of your running instance.  Look for the Public DNS line, which will have the form `ec2-XX-XXX-XX-XXX.us-geo-X.compute.amazonaws.com.`  
 
@@ -103,7 +103,8 @@ Host awstunnel
   User ec2-user
   Port XXXX
   HostName ec2-XX-XXX-XX-XXX.us-geo-X.compute.amazonaws.com
-  IdentityFile ~/path/to/your/keypairfile.pem```
+  IdentityFile ~/path/to/your/keypairfile.pem
+```
 
 
 If everything worked correctly, you should be able to run:  
